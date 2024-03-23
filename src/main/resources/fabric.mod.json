@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "inventoryoverhaul",
+	"version": "${version}",
+	"name": "Inventory Overhaul",
+	"description": "Rethinking Minecrafts inventory system",
+	"authors": [
+		"N1ckamed"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/inventoryoverhaul/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.nick.inventoryoverheaul.InventoryOverhaul"
+		],
+		"fabric-datagen": [
+			"net.nick.inventoryoverheaul.InventoryOverhaulDataGenerator"
+		]
+	},
+	"mixins": [
+		"inventoryoverhaul.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
